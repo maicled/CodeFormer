@@ -64,7 +64,7 @@ if __name__ == '__main__':
     parser.add_argument('-w', '--fidelity_weight', type=float, default=0.5, 
             help='Balance the quality and fidelity. Default: 0.5')
     parser.add_argument('-s', '--upscale', type=int, default=2, 
-            help='The final upsampling scale of the image. Default: 2')
+            help='The final upsampling scale of the image. Default: 2')  #@param {type:"number"}
     parser.add_argument('--has_aligned', action='store_true', help='Input are cropped and aligned faces. Default: False')
     parser.add_argument('--only_center_face', action='store_true', help='Only restore the center face. Default: False')
     parser.add_argument('--draw_box', action='store_true', help='Draw the bounding box for the detected faces. Default: False')
